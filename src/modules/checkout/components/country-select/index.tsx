@@ -10,7 +10,8 @@ const CountrySelect = forwardRef<
   NativeSelectProps & {
     region?: Region,
     toggleState?: any,
-    regions?: any
+    regions?: any,
+    isNav?: any
   }
 >(({ placeholder = "Country", region, defaultValue, ...props }, ref) => {
   const innerRef = useRef<HTMLSelectElement>(null)

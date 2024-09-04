@@ -74,6 +74,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                       >
                        {regions && (
                            <CountrySelect
+                           isNav={false}
                             toggleState={toggleState}
                             regions={regions}
                           />
