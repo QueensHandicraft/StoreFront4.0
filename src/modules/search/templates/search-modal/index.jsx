@@ -1,7 +1,7 @@
 "use client"
 
-// import { InstantSearch } from "react-instantsearch-hooks-web"
-import { InstantSearch } from "react-instantsearch-dom"
+import { InstantSearch } from "react-instantsearch-hooks-web"
+
 import { useRouter } from "next/navigation"
 import { MagnifyingGlassMini } from "@medusajs/icons"
 
@@ -16,7 +16,7 @@ export default function SearchModal() {
   const searchRef = useRef(null)
 
   // close modal on outside click
-  const handleOutsideClick = (event: MouseEvent) => {
+  const handleOutsideClick = (event) => {
     if (event.target === searchRef.current) {
       router.back()
     }
@@ -41,7 +41,7 @@ export default function SearchModal() {
 
   // on escape key press, close modal
   useEffect(() => {
-    const handleEsc = (event: KeyboardEvent) => {
+    const handleEsc = (event) => {
       if (event.key === "Escape") {
         router.back()
       }
