@@ -1,6 +1,7 @@
 "use client"
 
-import { InstantSearch } from "react-instantsearch-hooks-web"
+// import { InstantSearch } from "react-instantsearch-hooks-web"
+import { InstantSearch } from "react-instantsearch-dom"
 import { useRouter } from "next/navigation"
 import { MagnifyingGlassMini } from "@medusajs/icons"
 
