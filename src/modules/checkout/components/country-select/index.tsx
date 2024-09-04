@@ -8,7 +8,9 @@ import { Region } from "@medusajs/medusa"
 const CountrySelect = forwardRef<
   HTMLSelectElement,
   NativeSelectProps & {
-    region?: Region
+    region?: Region,
+    toggleState?: any,
+    regions?: any
   }
 >(({ placeholder = "Country", region, defaultValue, ...props }, ref) => {
   const innerRef = useRef<HTMLSelectElement>(null)
