@@ -42,7 +42,7 @@ export default function ProductActions({
   const [selectedQuantity, setSelectedQuantity] = useState(1)
 
   // Function to handle changes in the dropdown
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setSelectedQuantity(parseInt(e.target.value))
   }
 
