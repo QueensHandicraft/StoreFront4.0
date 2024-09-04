@@ -1,4 +1,5 @@
 import { instantMeiliSearch } from "@meilisearch/instant-meilisearch"
+import { algoliasearch } from "algoliasearch"
 
 const endpoint =
   process.env.NEXT_PUBLIC_SEARCH_ENDPOINT || "http://127.0.0.1:7700"
@@ -13,7 +14,8 @@ const endpoint =
 // If you want to use Algolia instead then uncomment the following lines, and delete the above lines
 // you should also install algoliasearch - yarn add algoliasearch
 
-import algoliasearch from "algoliasearch/lite"
+// import algoliasearch from "algoliasearch/lite"
+import { Algoliasearch } from "algoliasearch"
 
 const appId = process.env.NEXT_PUBLIC_SEARCH_APP_ID || "A4M8XC900L"
 
