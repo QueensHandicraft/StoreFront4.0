@@ -1,7 +1,6 @@
 import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
 
-export const runtime = "edge"
 
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
 import FeaturedProducts from "@modules/home/components/featured-products"

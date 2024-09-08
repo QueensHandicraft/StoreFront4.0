@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   description: "View your addresses",
 }
 
-export const runtime = "edge"
 
 export default async function Addresses() {
   const nextHeaders = headers()

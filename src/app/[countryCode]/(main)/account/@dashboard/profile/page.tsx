@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   description: "View and edit your Medusa Store profile.",
 }
 
-export const runtime = "edge"
 
 export default async function Profile() {
   const customer = await getCustomer()

@@ -8,7 +8,6 @@ type Props = {
   params: { id: string }
 }
 
-export const runtime = "edge"
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const order = await retrieveOrder(params.id).catch(() => null)

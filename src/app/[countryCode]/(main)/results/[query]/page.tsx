@@ -5,7 +5,6 @@ import SearchResultsTemplate from "@modules/search/templates/search-results-temp
 import { search } from "@modules/search/actions"
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
 
-export const runtime = "edge"
 
 export const metadata: Metadata = {
   title: "Search",

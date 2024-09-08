@@ -4,7 +4,6 @@ import { getCustomer, listCustomerOrders } from "@lib/data"
 import Overview from "@modules/account/components/overview"
 import { notFound } from "next/navigation"
 
-export const runtime = "edge"
 
 export const metadata: Metadata = {
   title: "Account",
