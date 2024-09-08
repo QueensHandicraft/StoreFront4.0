@@ -6,6 +6,8 @@ import { enrichLineItems } from "@modules/cart/actions"
 import OrderCompletedTemplate from "@modules/order/templates/order-completed-template"
 import { notFound } from "next/navigation"
 
+export const runtime = "edge"
+
 type Props = {
   params: { id: string }
 }

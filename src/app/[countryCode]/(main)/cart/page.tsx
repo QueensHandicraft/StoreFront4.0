@@ -2,6 +2,8 @@ import { LineItem } from "@medusajs/medusa"
 import { Metadata } from "next"
 import { cookies } from "next/headers"
 
+export const runtime = "edge"
+
 import CartTemplate from "@modules/cart/templates"
 
 import { enrichLineItems } from "@modules/cart/actions"

@@ -5,6 +5,8 @@ import { getCategoryByHandle, listCategories, listRegions } from "@lib/data"
 import CategoryTemplate from "@modules/categories/templates"
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
 
+export const runtime = "edge"
+
 type Props = {
   params: { category: string[]; countryCode: string }
   searchParams: {

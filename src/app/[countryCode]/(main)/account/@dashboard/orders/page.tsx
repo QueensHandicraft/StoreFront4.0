@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: "Overview of your previous orders.",
 }
 
+export const runtime = "edge"
+
 export default async function Orders() {
   const orders = await listCustomerOrders()
 
